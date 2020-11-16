@@ -3,8 +3,8 @@ def stringfy(list_items, separator):
 
     for index in range(len(list_items)):
         if index == (len(list_items) -1):
-            list_stringfied += f'{list_items[index]}'
+            list_stringfied += f'{list_items[index].lower()}'
             return list_stringfied
-        list_stringfied += f'{list_items[index]} {separator} '
+        list_stringfied += f'{list_items[index].lower()} {separator} '
 
     return list_stringfied
