@@ -1,10 +1,12 @@
-def stringfy(list_items, separator):
+import flask.testing
+
+def stringfy(items_list, separator):
     list_stringfied = ''
 
-    for index in range(len(list_items)):
-        if index == (len(list_items) -1):
-            list_stringfied += f'{list_items[index].lower()}'
+    for index in range(len(items_list)):
+        if index == (len(items_list) -1):
+            list_stringfied += f'{items_list[index].lower()}'
             return list_stringfied
-        list_stringfied += f'{list_items[index].lower()} {separator} '
+        list_stringfied += f'{items_list[index].lower()} {separator} '
 
     return list_stringfied
