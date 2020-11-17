@@ -1,7 +1,4 @@
 /venv
 .editorconfig
-/app/__pycache__
-/app/stringfy/__pycache__
-/app/to_uppercase/__pycache__
-/tests/__pycache__
+**__pycache__
 .env
